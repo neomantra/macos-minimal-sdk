@@ -70,6 +70,9 @@ ___opendir2$INODE64:
 .global ___sigbits
 ___sigbits:
 
+.global ___sincos_stret
+___sincos_stret:
+
 .global ___snprintf_chk
 ___snprintf_chk:
 
