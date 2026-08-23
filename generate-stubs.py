@@ -38,6 +38,9 @@ def generateStubs(sysroot, outfile, target):
         '__tlv_bootstrap',
         '___memmove_chk', '___memset_chk',
         '___stack_chk_guard', '___stack_chk_fail',
+        # Exported by libSystem, but declared in headers that are not part of
+        # this minimal SDK:
+        '_ioctl',           # <sys/ioctl.h>
     }
 
     # Parse the src/libSystem.h file to get a list of functions declared in libSystem.

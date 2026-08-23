@@ -1459,6 +1459,9 @@ _initgroups:
 .global _initstate
 _initstate:
 
+.global _ioctl
+_ioctl:
+
 .global _iruserok
 _iruserok:
 
