@@ -41,3 +41,7 @@ test: sysroots
 	file hello
 	$(CLANG) --target=arm64-apple-macos11     --sysroot=sysroot-macos-arm64  -fuse-ld=lld -o hello test/hello.c
 	file hello
+	$(CLANG) --target=x86_64-apple-macos10.12 --sysroot=sysroot-macos-x86_64 -fuse-ld=lld -o socket test/socket.c
+	file socket
+	$(CLANG) --target=arm64-apple-macos11     --sysroot=sysroot-macos-arm64  -fuse-ld=lld -o socket test/socket.c
+	file socket
